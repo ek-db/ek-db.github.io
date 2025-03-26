@@ -3,113 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Keyboard Design Portfolio</title>
+    <title>About Me</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #1a1a1a; /* Darker grey background */
-            color: #e0e0e0; /* Light grey text for better contrast */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
             text-align: center;
-            flex-direction: column;
         }
         header {
-            background-color: #111; /* Darker header */
+            background-color: #111;
             color: white;
-            padding: 2rem;
+            padding: 1rem 0;
+            position: fixed;
             width: 100%;
-            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-            position: absolute;
             top: 0;
             left: 0;
-            right: 0;
-            text-align: center;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
-        h1 {
-            font-size: 3em;
-            letter-spacing: 3px;
-            margin: 0;
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px;
         }
-        .contact-info {
-            font-size: 20px;
-            margin-top: 10px;
+        nav a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 10px 15px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
             color: #aaa;
         }
         .container {
-            max-width: 1200px;
+            max-width: 900px;
             padding: 40px;
-            background-color: #2a2a2a; /* Dark grey for the container */
+            margin: 120px auto 0;
+            background-color: #2a2a2a;
             border-radius: 10px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            margin-top: 120px; /* Add margin to avoid overlap with the header */
             text-align: left;
         }
         h2 {
             font-size: 2.5em;
-            margin-bottom: 40px;
-            color: #e0e0e0; /* Lighter text for headings */
+            color: #e0e0e0;
             font-weight: bold;
+            text-align: center;
+        }
+        h3 {
+            font-size: 1.75em;
+            color: #e0e0e0;
+            margin-top: 20px;
         }
         p {
             font-size: 1.2em;
+            color: #ccc;
             line-height: 1.6;
-            margin-bottom: 20px;
-            color: #ccc;
-        }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-            color: #ccc;
-        }
-        .experience-section {
-            margin-bottom: 40px;
-        }
-        .experience-section h3 {
-            font-size: 2em;
-            margin-bottom: 20px;
-            color: #e0e0e0;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>About Me</h1>
-        <p class="contact-info">Contact: myemail@example.com</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
     <div class="container">
         <h2>My Experience in Programming, Electronics, and Microcontrollers</h2>
-        <div class="experience-section">
-            <h3>Programming</h3>
-            <p>
-                I have developed a strong foundation in programming languages, including C, Python, and JavaScript. My work with embedded systems and microcontrollers has allowed me to write efficient, low-level code for hardware applications. I am comfortable with various programming paradigms and enjoy solving complex problems that involve both hardware and software integration.
-            </p>
-        </div>
-        <div class="experience-section">
-            <h3>Computers & Electronics</h3>
-            <p>
-                Over the years, I have developed a deep understanding of computer architecture, hardware design, and troubleshooting. My experience ranges from building and optimizing PCs to designing and testing circuit boards. I have hands-on experience with various electronics components, from resistors and capacitors to more complex systems such as sensors and processors.
-            </p>
-        </div>
-        <div class="experience-section">
-            <h3>Microcontrollers</h3>
-            <p>
-                Microcontrollers have been a core part of my work, and I specialize in working with platforms like Arduino, ESP32, and the popular Raspberry Pi. I have designed multiple projects that involve interfacing sensors, motors, displays, and other peripherals. My work includes building custom firmware and integrating microcontrollers into larger systems, often with wireless connectivity and IoT features.
-            </p>
-        </div>
-        <div class="experience-section">
-            <h3>Focus on nice!nanos</h3>
-            <p>
-                One of my recent projects revolves around the nice!nanos keyboard, which is a customizable and open-source mechanical keyboard. I have been involved in the development and firmware programming for this project, specifically focusing on enhancing the ergonomics, keymap customization, and improving the overall user experience. The nice!nanos is designed with flexibility in mind, and I have contributed by fine-tuning its firmware to allow for a seamless integration of features such as layers, macros, and dynamic key lighting.
-            </p>
-            <p>
-                My work with nice!nanos also extends to community involvement, where I have shared my designs and code with the open-source community. I strongly believe in the value of collaborative development and have worked with others to create innovative and functional keyboard layouts.
-            </p>
-        </div>
+
+        <h3>Programming</h3>
+        <p>I have developed a strong foundation in programming languages, including C, Python, and JavaScript. My work with embedded systems and microcontrollers has allowed me to write efficient, low-level code for hardware applications. I am comfortable with various programming paradigms and enjoy solving complex problems that involve both hardware and software integration.</p>
+
+        <h3>Computers & Electronics</h3>
+        <p>Over the years, I have developed a deep understanding of computer architecture, hardware design, and troubleshooting. My experience ranges from building and optimizing PCs to designing and testing circuit boards. I have hands-on experience with various electronics components, from resistors and capacitors to more complex systems such as sensors and processors.</p>
+
+        <h3>Microcontrollers</h3>
+        <p>Microcontrollers have been a core part of my work, and I specialize in working with platforms like Arduino, ESP32, and the popular Raspberry Pi. I have designed multiple projects that involve interfacing sensors, motors, displays, and other peripherals. My work includes building custom firmware and integrating microcontrollers into larger systems, often with wireless connectivity and IoT features.</p>
+
+        <h3>Focus on nice!nanos</h3>
+        <p>One of my recent projects revolves around the nRF52840, a powerful Bluetooth Low Energy (BLE) microcontroller developed by Nordic Semiconductor. This chipset is widely used in wireless applications, including custom mechanical keyboards, due to its low power consumption, advanced connectivity features, and robust processing capabilities. I have been involved in the development and firmware programming for keyboards utilizing the nRF52840, specifically focusing on enhancing ergonomics, keymap customization, and improving the overall user experience.
+
+The nRF52840 is designed with flexibility in mind, making it an excellent choice for wireless keyboard projects. I have contributed by fine-tuning its firmware to allow for seamless integration of features such as layers, macros, and dynamic key lighting while optimizing power efficiency for extended battery life.
+
+My work with the nRF52840 also extends to community involvement, where I have shared my designs and code with the open-source community. I strongly believe in the value of collaborative development and have worked with others to create innovative and functional keyboard layouts that leverage the capabilities of this microcontroller.</p>
+
+       
     </div>
 </body>
 </html>
